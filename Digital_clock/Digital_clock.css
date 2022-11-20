@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    justify-content: center;
+    background: url(https://th.bing.com/th/id/R.e1e4e06587421c8da2c6ebb7e577d29a?rik=csTbduTSehvxfg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f6bsG3BC.jpg&ehk=%2fuvblmIx4XzXUmgROsIYe8twD3Zq61u%2f2UJnwfyBU20%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size:40px;
+    color: rgb(55, 36, 106);
+    text-align: center;
+}
+.clock{
+    display: flex;
+    position: relative;
+}
+.clock div{
+    margin: 5px;
+}
+.clock span{
+    width:200px;
+    height:200px;
+    background: rgb(113, 233, 113);
+    opacity:0.5px;
+    color:rgb(41, 3, 3);
+    display:flex;
+    justify-content :center;
+    align-items:center;
+    font-size:50px;
+    text-shadow: 2px 2px 4px rgba(red, green, blue, 0.3);
+}
+
+.clock .text{
+    height: 40px;
+    font-size:30px;
+    color: antiquewhite;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgb(35, 22, 88);
+    opacity:0.8;
+}
+
+.clock #ampm{
+    bottom:0;
+    position:absolute;
+    width:60px;
+    height:40px;
+    font-size:25px;
+    background:blue;
+    color:wheat;
+}
