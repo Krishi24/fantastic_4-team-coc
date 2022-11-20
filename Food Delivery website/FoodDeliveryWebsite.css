@@ -1,0 +1,79 @@
+ /* CSS Reset */
+ *{
+    margin:0;
+    padding:0;
+ }
+
+ /* CSS Variables */
+ :root{
+    --navbar-height:59px;
+ }
+
+ /* Navigation Bar */
+ #navbar{
+    background-color: rgba(60, 58, 58, 0.61);
+    display:flex;
+    align-items: center;
+    position:relative;
+ }
+
+ /* Logo and Image */
+ #logo{
+    margin:0px;
+    padding:0px;
+ }
+ #logo img{
+    height:40px;
+
+ }
+
+ /* List items styling */
+ #navbar ul{
+    display:flex;
+
+ }
+ #navbar::before{
+    /* content: "none"; */
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:1;
+    opacity:0.4;
+ }
+ #navbar ul li{
+    color:white;
+    list-style: none;
+    font-size:1.2rem;
+ }
+ #navbar ul li a{
+    display:block;
+    padding:3px 22px;
+    border-radius:20px;
+    color:blue;
+    text-decoration: none;
+ }
+ #navbar ul li a:hover {
+    color:red;
+    background-color:violet;
+ } 
+
+ /* Home Section */
+ #home{
+    display:flex;
+    flex-direction: column;
+    color:rgb(2, 39, 5);
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+ }
+ #home::before{
+    content:"";
+    position:absolute;
+    background: url("https://image.freepik.com/free-photo/food-delivery-concept-lunch-container-background_82893-14790.jpg") no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+ }
