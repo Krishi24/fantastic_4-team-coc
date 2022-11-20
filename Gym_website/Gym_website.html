@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoomika Fitness Gym</title>
+</head>
+<link rel="stylesheet" href="Gym_website.css">
+<link href="https://fonts.googleapis.com/css2?family=Combo&family=Oswald:wght@600&display=swap" rel="stylesheet">
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url("https://pluspng.com/img-png/png-fitness-silhouette-sports-barbell-fitness-body-building-960.png");
+        height: 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:red;
+        font-family: 'Oswald', sans-serif;;
+
+    }
+    .left{
+        /* border:2px solid red; */
+        display:inline-block;
+        position:absolute;
+        left:34px;
+        top:20px
+    }
+    .mid{
+        display:block;
+        width:33%;
+        margin:20px auto;
+        /* border:2px solid rgb(34, 215, 21); */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top:20px;
+        display:inline-block;
+        /* border:2px solid rgb(51, 0, 255); */
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        display:inline-block;
+        font-size: 18px;
+    }
+    .navbar li a{
+        color:red;
+        text-decoration: none;
+        padding:15px 15px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(93, 21, 21);
+    }
+    .left img{
+        width:100px;
+    }    
+    .btn{
+        margin:0px 9px;
+        background-color: gray;
+        color: rgb(93,21,21);
+        padding:3px 14px;
+        border: 2px solid black;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .btn:hover{
+        background-color: rgb(64, 63, 63);
+    }
+    .container{
+        border: 0px solid white;
+        /* margin:240px 30px; */
+        padding:68px 11px;
+        width: 33%;
+        height: 30%;
+        border-radius:25px;
+        color:rgb(93, 21, 21);
+    }
+    .container h1{
+        text-align:center;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        padding:15px;
+        margin:10px;
+        width:300px;
+        font-family: 'Oswald', sans-serif ;
+    }
+    .container button{
+        width: 330px;
+        padding:15px;
+        margin:10px;
+        text-align: center;
+
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://th.bing.com/th/id/OIP.i0_83kchb092QyTUI-a-6QHaHa?pid=ImgDet&rs=1"alt="Error">
+            <div>Bhoomika's Fitness Centre</div>
+        </div>
+        <!-- Mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >About us</a></li>
+                <li><a href="#" >Fitness Calculator</a></li>
+                <li><a href="#" >Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us </button>
+            <button class="btn">Email us </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Mumbai now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
